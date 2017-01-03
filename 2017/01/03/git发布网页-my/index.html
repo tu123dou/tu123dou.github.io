@@ -84,25 +84,49 @@
 
 
 
-<meta name="description" content="你好###　你好吗
+<meta name="description" content="第一种方法-&amp;gt;借用git发布网页start
+在github上创建一个仓库
+注意要勾选 Initialize this repository with a README
+Settings -&amp;gt; GitHub Pages-&amp;gt; Choose a theme(随意选择一个模板或者专题)
 
-我很好
-谢谢">
+
+把仓库地址克隆到本地
+git init
+git clone [仓库地址]
+
+
+把要发布的网页文件放">
 <meta property="og:type" content="article">
-<meta property="og:title" content="one">
-<meta property="og:url" content="http://yoursite.com/2017/01/03/one/index.html">
+<meta property="og:title" content="发布静态网页">
+<meta property="og:url" content="http://yoursite.com/2017/01/03/git发布网页-my/index.html">
 <meta property="og:site_name" content="土豆">
-<meta property="og:description" content="你好###　你好吗
+<meta property="og:description" content="第一种方法-&amp;gt;借用git发布网页start
+在github上创建一个仓库
+注意要勾选 Initialize this repository with a README
+Settings -&amp;gt; GitHub Pages-&amp;gt; Choose a theme(随意选择一个模板或者专题)
 
-我很好
-谢谢">
-<meta property="og:updated_time" content="2017-01-03T08:28:34.568Z">
+
+把仓库地址克隆到本地
+git init
+git clone [仓库地址]
+
+
+把要发布的网页文件放">
+<meta property="og:updated_time" content="2017-01-03T08:32:14.026Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="one">
-<meta name="twitter:description" content="你好###　你好吗
+<meta name="twitter:title" content="发布静态网页">
+<meta name="twitter:description" content="第一种方法-&amp;gt;借用git发布网页start
+在github上创建一个仓库
+注意要勾选 Initialize this repository with a README
+Settings -&amp;gt; GitHub Pages-&amp;gt; Choose a theme(随意选择一个模板或者专题)
 
-我很好
-谢谢">
+
+把仓库地址克隆到本地
+git init
+git clone [仓库地址]
+
+
+把要发布的网页文件放">
 
 
 
@@ -130,13 +154,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/01/03/one/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/01/03/git发布网页-my/"/>
 
 
 
 
 
-  <title> one | 土豆 </title>
+  <title> 发布静态网页 | 土豆 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -249,7 +273,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/03/one/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/03/git发布网页-my/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Mr.Shi">
@@ -273,7 +297,7 @@
             
             
               
-                one
+                发布静态网页
               
             
           </h1>
@@ -324,10 +348,41 @@
       
 
       
-        <h2 id="你好"><a href="#你好" class="headerlink" title="你好"></a>你好</h2><p>###　你好吗</p>
-<ul>
-<li>我很好</li>
-<li>谢谢</li>
+        <h2 id="第一种方法-gt-借用git发布网页"><a href="#第一种方法-gt-借用git发布网页" class="headerlink" title="第一种方法-&gt;借用git发布网页"></a>第一种方法-&gt;借用git发布网页</h2><h4 id="start"><a href="#start" class="headerlink" title="start"></a>start</h4><ol>
+<li>在github上创建一个仓库<ul>
+<li>注意要勾选 Initialize this repository with a README</li>
+<li>Settings -&gt; GitHub Pages-&gt; Choose a theme(随意选择一个模板或者专题)</li>
+</ul>
+</li>
+<li>把仓库地址克隆到本地<ul>
+<li>git init</li>
+<li>git clone [仓库地址]</li>
+</ul>
+</li>
+<li>把要发布的网页文件放到上步的文件夹里<blockquote>
+<p>注意: 如果访问页面是项目根目录下的index.html的话,我们访问的时候可以省略文件名不写,这样默认找的也是index.html,如果不是index则必须要写上才可以</p>
+</blockquote>
+</li>
+<li>把这个文件夹提交到github上<ul>
+<li>git add .</li>
+<li>git commit -m”WebPage”</li>
+<li>git push origin master</li>
+</ul>
+</li>
+<li>回到github的仓库,在setting里面会有网址<ul>
+<li>一般网址格式:<a href="https://用户名.github.io/仓库名/index.html" target="_blank" rel="external">https://用户名.github.io/仓库名/index.html</a><blockquote>
+<p>注意:github只能上传和发布前端静态页面(不能有后台程序,但是页面中的数据可以跨域访问实现动态绑定</p>
+<h4 id="end"><a href="#end" class="headerlink" title="end"></a>end</h4></blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="第二种方法-gt-在gitHub上挂载静态页"><a href="#第二种方法-gt-在gitHub上挂载静态页" class="headerlink" title="第二种方法-&gt;在gitHub上挂载静态页"></a>第二种方法-&gt;在gitHub上挂载静态页</h2><ul>
+<li>需要创建一个仓库</li>
+<li>挂载静态页必须将代码提交到名为gh-pages分支上</li>
+<li>将这个分支推送到github上</li>
+<li>在seeings中可以看网址<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git checkout -b gh-pages</div><div class="line">git add .</div><div class="line">git commit -m&quot;commit&quot;</div><div class="line">git push origin gh-pages</div></pre></td></tr></table></figure></li>
 </ul>
 
       
@@ -355,14 +410,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/01/03/test/" rel="next" title="测试文档">
+                <i class="fa fa-chevron-left"></i> 测试文档
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/01/03/发布博客/" rel="prev" title="one">
-                one <i class="fa fa-chevron-right"></i>
+              <a href="/2017/01/03/发布博客/" rel="prev" title="搭建博客">
+                搭建博客 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -433,7 +492,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -472,7 +531,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#你好"><span class="nav-number">1.</span> <span class="nav-text">你好</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一种方法-gt-借用git发布网页"><span class="nav-number">1.</span> <span class="nav-text">第一种方法->借用git发布网页</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#start"><span class="nav-number">1.0.1.</span> <span class="nav-text">start</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#end"><span class="nav-number">1.0.2.</span> <span class="nav-text">end</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二种方法-gt-在gitHub上挂载静态页"><span class="nav-number">2.</span> <span class="nav-text">第二种方法->在gitHub上挂载静态页</span></a></li></ol></div>
             
 
           </div>
